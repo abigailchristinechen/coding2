@@ -1,0 +1,183 @@
+---
+title: "Untitled"
+author: "Abigail Chen"
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+  library(tidyverse)
+  library(rvest)
+  library(stringr)
+  library('xml2')
+  library(httr)  
+  library(tidyr) 
+  library(reshape2)
+  library(RCurl)
+  library(htmltidy)
+  library(XML)
+
+```
+
+## First Function to get all the Links and Date
+
+
+```{r }
+getlinks = function(Days){
+  
+  url = "https://techcrunch.com/"
+  
+  urlF = url
+  
+  ExitFlag = 0
+  
+  df = data.frame()
+  
+  CurrentDate = Sys.Date()
+  
+  FilterDate = CurrentDate - Days
+  
+  while(ExitFlag == 0){
+    
+    #just read the html once
+    page <- read_html(url) 
+    
+    WebList <- page %>% html_nodes("a") %>%
+      html_attr("href")
+    
+    url = WebList[length(WebList)]
+    
+    TempWebList = gsub(urlF,"",WebList)
+    
+    for (i in 1:length(WebList)) {
+      
+      tryCatch(
+        {
+          Year = unlist(strsplit(TempWebList[i],"/"))[1]
+          
+          Month = unlist(strsplit(TempWebList[i],"/"))[2]
+          
+          Day = unlist(strsplit(TempWebList[i],"/"))[3]
+          
+          paste0(Year,"-",Month,"-",Day)
+          
+          date = as.Date(paste0(Year,"-",Month,"-",Day))
+          
+          CurrentDate = date
+          
+          if(CurrentDate > FilterDate){
+            
+            link = WebList[i]
+            
+            Tempdf = data.frame(Date = c(date),
+                                Link = c(link))
+            
+            df = rbind(df,Tempdf)
+          }
+          else{
+            
+            ExitFlag = 1
+            
+          }
+        },
+        error = function(e) {
+        }
+      )
+    }
+  }
+  
+  df = unique(df)
+  
+  row.names(df) <- NULL
+  
+  return(df)
+}
+
+```
+
+## Second Function gets Title, Sub-Titles, and Text
+Note: All the subtitles in an article are combined into a single string separated by "|".
+
+```{r }
+
+getText = function( dfTemp ){
+  
+  data = data.frame()
+  
+  for (link in 1:nrow(dfTemp)) {
+    
+    u = dfTemp$Link[link]
+    
+    scraping <- read_html(u)
+    
+    title = scraping %>%
+      html_nodes("h1")%>%
+      html_text()
+    
+    title = title[1]
+    
+    subTitles = scraping %>%
+      html_nodes("h2")%>%
+      html_text()
+    
+    subTitles = paste(subTitles, collapse='|' )
+    
+    
+    text = scraping %>%
+      html_nodes("p")%>%
+      html_text()
+    
+    text = Filter(function(x) !any(grepl("function()", x)), text) 
+    
+    text  = paste(text, collapse= " " )
+    
+    dataTemp = data.frame(Date = c(dfTemp$Date[link]),
+                          Link = c(dfTemp$Link[link] ),
+                          Title = c(title),
+                          SubTitles = c(subTitles),
+                          Text = c(text))
+    
+    data = rbind(data, dataTemp)
+    
+  }
+  
+  return(data)
+  
+}
+
+```
+
+## Setting up the number of days
+
+The number set for days means the articles links from the past defined number of days will be scrapped. Here Days = 7 means for the past one week.  
+```{r }
+Days = 7
+```
+
+## Calling the first function
+
+```{r }
+
+df = getlinks(Days)
+
+```
+
+## Calling the second function
+
+```{r }
+
+Data = getText(df)
+
+```
+
+## Showing the head of the result
+
+```{r }
+
+head(Data)
+
+```
