@@ -72,3 +72,70 @@ Daily Winners    :   4,526 rows. Monthly Winners  :   147 rows. Yearly Winners  
 ##Total Scraped  :   14,850 rows.
 
 
+### Scraped Details 
+For Winners: Title, Description, Country, Author, Rating, Categories, Colors, Technologies, Industry, Tags, Rating
+For Nominees: Title, Description, Country, Author, Rating, Technologies, Industry, Tags
+
+
+
+# Data Visualization
+
+```{r, warning=FALSE,error= FALSE }
+plot_ly(NomineesData, x = ~Country, type = "histogram", color = ~Country)%>%
+  layout(title = 'Frequency Plot: Country wise Nominees')
+
+```
+The United States has the most nominations with 2400 followed by the United Kingdom at 1087.
+
+
+```{r, warning=FALSE,error= FALSE }
+plot_ly(DayData, x = ~Country, type = "histogram", color = ~Country)%>%
+  layout(title = 'Frequency Plot: Country wise Daily Winners')
+
+```
+The United States has the most "Daily Winners" articles. France comes at second while UK stands at third position.
+
+
+```{r, warning=FALSE,error= FALSE }
+plot_ly(MonthData, x = ~Country, type = "histogram", color = ~Country)%>%
+  layout(title = 'Frequency Plot: Country wise Monthly Winners')
+```
+Here again the US is the clear winner followed by France; however, Netherlands have displaced the UK at the third spot. 
+
+
+```{r, warning=FALSE,error= FALSE }
+plot_ly(YearData, x = ~Country, type = "histogram", color = ~Country)%>%
+  layout(title = 'Frequency Plot: Country wise Yearly Winners')
+```
+France and Netherlands are the joint winners followed by the US and Denmark respectively. 
+
+
+```{r }
+plot_ly(DayData, x = ~Rating, type = "histogram")%>%
+  layout(title = 'Histogram: Daily Winners Rating')
+
+```
+The rating spread shows normal distribution with mean lying somewhere at 7.3.
+
+
+```{r }
+plot_ly(MonthData, x = ~Rating, type = "histogram")%>%
+  layout(title = 'Histogram: Monthly Winners Rating')
+
+```
+The mean and spread of the monthly winners spread has moved towards higher ratings compared to the daily winners.
+
+
+```{r }
+plot_ly(YearData, x = ~Rating, type = "histogram")%>%
+  layout(title = 'Histogram: Yearly Winners Rating')
+
+```
+The spread of yearly winners rating is the least of all three and its mean lies around 8.0.
+
+
+
+
+
+
+
