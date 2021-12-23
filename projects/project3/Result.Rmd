@@ -35,3 +35,11 @@ DayData$Country = as.factor(DayData$Country)
 DayData = DayData[order(DayData$Country),]
 DayData = DayData[5:nrow(DayData),]
 ```
+
+
+# Scraping Methodology 
+  1.    All the articles link for "Daily", "Monthly" and "Yearly" winners, along with the "Nominated" articles were scrapped and their web links were saved in a separate ".txt" file. 
+  2.    The ".txt" files were read to get the list of web links saved earlier, these links were used to scrape "Title", "Description", "Country", "Author","Rating", "Categories" and "Colors" for "Daily", "Monthly" and "Yearly" winners. The scrapped data was saved as "csv" files.
+  3.    For "Nominees" the "Rating" was not available, colors and authors couldn't be scrapped and rest was done as mentioned above. 
+
+
