@@ -14,3 +14,24 @@ The goal of this project is to scrape the site [**Awwwards**](https://www.awwwar
 # Scope & Continuinty 
 For this project, I will be scraping the ALL of the yearly winners, monthly winners, daily winners, and nominees from Awwwards.  The data will be dating from 2011 up to December 2021. The graphs and representations here will give a very basic overview of the dataset, but I intend to continue and perform extended analysis to analyze the trends and the evolution of digital design. 
 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(plotly)
+library(prettydoc)
+NomineesData = read.csv("NomineesData.csv")
+CountryList = c("Man","MORE","Suriname")
+NomineesData = NomineesData[!NomineesData$Country %in% CountryList ,]
+NomineesData$Country = as.factor(NomineesData$Country)
+
+MonthData = read.csv("MonthData.csv")
+MonthData$Country = as.factor(MonthData$Country)
+
+YearData = read.csv("YearData.csv")
+YearData$Country = as.factor(YearData$Country)
+
+DayData = read.csv("DayData.csv")
+DayData$Country = as.factor(DayData$Country)
+DayData = DayData[order(DayData$Country),]
+DayData = DayData[5:nrow(DayData),]
+```
