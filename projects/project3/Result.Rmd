@@ -61,3 +61,14 @@ head(MonthData)
 ```{r }
 head(YearData)
 ```
+
+
+# Scraping Results
+##Total Winners  :   4,710 rows.
+Daily Winners    :   4,526 rows. Monthly Winners  :   147 rows. Yearly Winners   :   37 rows.
+
+##Nominees       :   10,140 rows.
+
+##Total Scraped  :   14,850 rows.
+
+
