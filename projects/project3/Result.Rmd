@@ -43,3 +43,21 @@ DayData = DayData[5:nrow(DayData),]
   3.    For "Nominees" the "Rating" was not available, colors and authors couldn't be scrapped and rest was done as mentioned above. 
 
 
+```{r }
+head(NomineesData)
+```
+
+
+```{r }
+head(DayData)
+```
+
+
+```{r }
+head(MonthData)
+```
+
+
+```{r }
+head(YearData)
+```
