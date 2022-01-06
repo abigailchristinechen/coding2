@@ -145,6 +145,20 @@ getText = function( dfTemp ){
 }
 
 
+df = getlinks(Days) ## calling the first function
+## to save the output of the first function
+#write.csv(df,"listLinks.csv", row.names = FALSE) 
+
+## calling the second function
+Data = getText(df) 
+
+# to save the output of the second function
+#write.csv(Data,"Data.csv", row.names = FALSE) 
+
+## show head of the data frame
+head(Data)
+
+
 
 
 
