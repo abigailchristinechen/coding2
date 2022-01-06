@@ -27,39 +27,17 @@ Code Contents:
              
 
 2. <h3>GetLink Function </h3> 
-    1.  To start, we need to go to the TechCrunch webpage, and urlF is introduced because url itself with change after reading one page.  We also have to determine the number of days we want to collect with the Days variable, for this project I decided to collect a week for of articles.  I first ran the code around Early December 2021, so the articles scraped list in the 
+    1.  To start, we need to go to the TechCrunch webpage, and urlF is introduced because url itself with change after reading one page.  We also have to determine the number of days we want to collect with the Days variable, for this project I decided to collect a week for of articles.  I first ran the code around Early December 2021, and the articles scraped list are in the [ListLinks](https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/listLinks.txt)
 
-  
-  ExitFlag = 0 # it remains zero until data till our desired date has been scraped
-  
-  df = data.frame() # creating a data frame which will contain all the links and their dates
-  
-  CurrentDate = Sys.Date() # gets the current date from the system
-  
-  FilterDate = CurrentDate - Days # subtracts days from the current date to get filter date
-  # it is the date until which we will extract our data
-  
-  while(ExitFlag == 0){ # remains in this loop until falg  is 0
-    
-    page <- read_html(url) # reads the entire html page
-    
-    WebList <- page %>% html_nodes("a") %>%
-      html_attr("href") ## this step gets the list of all the web link from the page scraped above 
-    
-    url = WebList[length(WebList)] # resetting the url to the next page, 
-    #last element of the weblist  contains list to the next page of the website 
-    
-    ## removing the urlF from each website
-    TempWebList = gsub(urlF,"",WebList)
-    
-    ## loop over al the links and select the ones we want
-    for (i in 1:length(WebList)) {
-
-    
-    1.  Here is the Get Link function 
-      <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Getlink%20Code%201.png" width="500" height="200"/>
+ <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Getlink%20Code%201.png" width="500" height="200"/>
        
-       <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Getlink%20Code%202.png" width="500" height="200"/>
+ <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Getlink%20Code%202.png" width="500" height="200"/>
+  
+3. <h3>Error Catching</h3> 
+
+    
+   
+     
       
         
         
