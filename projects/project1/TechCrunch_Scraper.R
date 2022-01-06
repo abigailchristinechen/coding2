@@ -23,11 +23,11 @@ getlinks = function(Days){
   
   urlF = url # urlF is introduced because url itself with change after reading one page
   # urlF is the web link we started our scraping from
-  # it will be used ahead for data procesing
+  # it will be used ahead for data processing
   
   ExitFlag = 0 # it remains zero until data till our desired date has been scraped
   
-  df = data.frame() # creating a dataframe which will contain all the links and their dates
+  df = data.frame() # creating a data frame which will contain all the links and their dates
   
   CurrentDate = Sys.Date() # gets the current date from the system
   
@@ -53,7 +53,7 @@ getlinks = function(Days){
       ## try catch is used for error handling
       tryCatch(
         {
-          ## the webink has date embeded in them, extracting date below
+          ## the weblink has date embeded in them, extracting date below
           Year = unlist(strsplit(TempWebList[i],"/"))[1] 
           Month = unlist(strsplit(TempWebList[i],"/"))[2]
           Day = unlist(strsplit(TempWebList[i],"/"))[3]
