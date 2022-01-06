@@ -1,4 +1,4 @@
-##Coding 2: Twitter API + Sentiment Analysis
+##Coding 2: Twitter API + Sentiment Analysis +
 ##Topic: Axie Infinity
 ##Tags: "Axie", "Axie Infinity" , "AXS", "SLP", "Manager", "Scholar", "Scholarship", "Sky Mavis" 
 ##Abigail Chen
@@ -377,7 +377,7 @@ plot_ly(sentiments, x = ~sentiment,y =~n, type = "bar", color =~ sentiment )%>%
 
 ##############################################
 
-#Combined Analysis for 2 tags 
+#Combined Analysis for 2 tags
 # Axie
 # axie infinity
 # AXS
@@ -387,6 +387,7 @@ plot_ly(sentiments, x = ~sentiment,y =~n, type = "bar", color =~ sentiment )%>%
 # Manager 
 # Scholar
 
+#Combined Analysis #1 (for 2 tags)
 #Checks for Scholar in Axie file
 #853 observations
 Axie_Scholar = Axie[grepl("Scholar", Axie$text,ignore.case = TRUE),]
@@ -427,117 +428,201 @@ plot_ly(sentiments, x = ~sentiment,y =~n, type = "bar", color =~ sentiment )%>%
 
 ##############################################
 
+#Combined Analysis #2 (for 2 tags)
+#Checks for AXS in Axie file
+#398 observations
 Axie_AXS = Axie[grepl("AXS", Axie$text,ignore.case = TRUE),]
 
+#separate the tweets into words
+#20,840 observations
 tweet_words <- Axie_AXS %>% select(id, text) %>% unnest_tokens(word,text)
 
+#1,149 observations
 my_stop_words <- stop_words %>% select(-lexicon)
 
+#12,584 observations
+#find the interesting words within the tweets
 tweet_words_interesting <- tweet_words %>% anti_join(my_stop_words)
 
+#13,875 observations
 bing_lex <- get_sentiments("nrc")
 
+#left join the interesting tweets to the lexicon
+#13,433 observations
 fn_sentiment <- tweet_words_interesting %>% left_join(bing_lex)
 
+#combine the sentiments into summarized 'emotions'
 sentiments = fn_sentiment %>% filter(!is.na(sentiment)) %>% group_by(sentiment) %>% summarise(n=n())
 
+#convert into data frame
 sentiments = as.data.frame(sentiments)
 
+#convert into factors
 sentiments$sentiment = as.factor(sentiments$sentiment)
 
+#Sentiment graph for tweets with 'AXS & Axie"
+#y axis is for the number of words 
+#x axis is for the emotion
 plot_ly(sentiments, x = ~sentiment,y =~n, type = "bar", color =~ sentiment )%>%
   layout(title = "Sentiments in tweets with Axie and AXS", yaxis = list(title = "Word Count"), xaxis = list(title = "Sentiments", categoryorder = "total descending"))
 
 ##############################################
 
-
+#Combined Analysis #3 (for 2 tags)
+#Checks for SLP in Axie file
+#1,337 observations
 Axie_SLP = Axie[grepl("SLP", Axie$text,ignore.case = TRUE),]
 
+#separate the tweets into words
+#38,712 observations
 tweet_words <- Axie_SLP %>% select(id, text) %>% unnest_tokens(word,text)
 
+#1,149 observations
 my_stop_words <- stop_words %>% select(-lexicon)
 
+#25,497 observations
+#find the interesting words within the tweets
 tweet_words_interesting <- tweet_words %>% anti_join(my_stop_words)
 
+#13,875 observations
 bing_lex <- get_sentiments("nrc")
 
+#left join the interesting tweets to the lexicon
+#26,670 observations
 fn_sentiment <- tweet_words_interesting %>% left_join(bing_lex)
 
+#combine the sentiments into summarized 'emotions'
 sentiments = fn_sentiment %>% filter(!is.na(sentiment)) %>% group_by(sentiment) %>% summarise(n=n())
 
+#convert into data frame
 sentiments = as.data.frame(sentiments)
 
+#convert into factors
 sentiments$sentiment = as.factor(sentiments$sentiment)
 
+#Sentiment graph for tweets with "SLP & Axie"
+#y axis is for the number of words 
+#x axis is for the emotion
 plot_ly(sentiments, x = ~sentiment,y =~n, type = "bar", color =~ sentiment )%>%
   layout(title = "Sentiments in tweets with Axie and SLP", yaxis = list(title = "Word Count"), xaxis = list(title = "Sentiments", categoryorder = "total descending"))
 
 ##############################################
+#Combined Analysis #4 (for 2 tags)
+#Checks for Sky Mavis in Axie file
+#5 observations
 
 Axie_SkyMavis = Axie[grepl("Sky Mavis", Axie$text,ignore.case = TRUE),]
 
+#separate the tweets into words
+#106 observations
 tweet_words <- Axie_SkyMavis %>% select(id, text) %>% unnest_tokens(word,text)
 
+#1,149 observations
 my_stop_words <- stop_words %>% select(-lexicon)
 
+#62 observations
+#find the interesting words within the tweets
 tweet_words_interesting <- tweet_words %>% anti_join(my_stop_words)
 
+#13,875 observations
 bing_lex <- get_sentiments("nrc")
 
+#left join the interesting tweets to the lexicon
+#68 observations
 fn_sentiment <- tweet_words_interesting %>% left_join(bing_lex)
 
+#combine the sentiments into summarized 'emotions'
 sentiments = fn_sentiment %>% filter(!is.na(sentiment)) %>% group_by(sentiment) %>% summarise(n=n())
 
+#convert into data frame
 sentiments = as.data.frame(sentiments)
 
+#convert into factors
 sentiments$sentiment = as.factor(sentiments$sentiment)
 
+#Sentiment graph for tweets with "Sky Mavis & Axie"
+#y axis is for the number of words 
+#x axis is for the emotion
 plot_ly(sentiments, x = ~sentiment,y =~n, type = "bar", color =~ sentiment )%>%
   layout(title = "Sentiments in tweets with Axie and Sky Mavis", yaxis = list(title = "Word Count"), xaxis = list(title = "Sentiments", categoryorder = "total descending"))
 
 ##############################################
 
+#Combined Analysis #5 (for 2 tags)
+#Checks for Scholarship in Axie file
+#448 observations
 Axie_Scholarship = Axie[grepl("Scholarship", Axie$text,ignore.case = TRUE),]
 
+#separate the tweets into words
+#9,997 observations
 tweet_words <- Axie_Scholarship %>% select(id, text) %>% unnest_tokens(word,text)
 
+#1,149 observations
 my_stop_words <- stop_words %>% select(-lexicon)
 
+#5,763 observations
+#find the interesting words within the tweets
 tweet_words_interesting <- tweet_words %>% anti_join(my_stop_words)
 
+#13,875 observations
 bing_lex <- get_sentiments("nrc")
 
+#left join the interesting tweets to the lexicon
+#7,024 observations
 fn_sentiment <- tweet_words_interesting %>% left_join(bing_lex)
 
+#combine the sentiments into summarized 'emotions'
 sentiments = fn_sentiment %>% filter(!is.na(sentiment)) %>% group_by(sentiment) %>% summarise(n=n())
 
+#convert into data frame
 sentiments = as.data.frame(sentiments)
 
+#convert into factors
 sentiments$sentiment = as.factor(sentiments$sentiment)
 
+#Sentiment graph for tweets with "Scholarship & Axie"
+#y axis is for the number of words 
+#x axis is for the emotion
 plot_ly(sentiments, x = ~sentiment,y =~n, type = "bar", color =~ sentiment )%>%
   layout(title = "Sentiments in tweets with Axie and Scholarship", yaxis = list(title = "Word Count"), xaxis = list(title = "Sentiments", categoryorder = "total descending"))
 
 ##############################################
 
+#Combined Analysis #6 (for 2 tags)
+#Checks for Manager in Axie file
+#213 observations
 Axie_Manager = Axie[grepl("Manager", Axie$text,ignore.case = TRUE),]
 
+#separate the tweets into words
+#4,369 observations
 tweet_words <- Axie_Manager %>% select(id, text) %>% unnest_tokens(word,text)
 
+#1,149 observations
 my_stop_words <- stop_words %>% select(-lexicon)
 
+#2,541 observations
+#find the interesting words within the tweets
 tweet_words_interesting <- tweet_words %>% anti_join(my_stop_words)
 
+#13,875 observations
 bing_lex <- get_sentiments("nrc")
 
+#left join the interesting tweets to the lexicon
+#2,891 observations
 fn_sentiment <- tweet_words_interesting %>% left_join(bing_lex)
 
+#combine the sentiments into summarized 'emotions'
 sentiments = fn_sentiment %>% filter(!is.na(sentiment)) %>% group_by(sentiment) %>% summarise(n=n())
 
+#convert into data frame
 sentiments = as.data.frame(sentiments)
 
+#convert into factors
 sentiments$sentiment = as.factor(sentiments$sentiment)
 
+#Sentiment graph for tweets with "Manager & Axie"
+#y axis is for the number of words 
+#x axis is for the emotion
 plot_ly(sentiments, x = ~sentiment,y =~n, type = "bar", color =~ sentiment )%>%
   layout(title = "Sentiments in tweets with Axie and Manager", yaxis = list(title = "Word Count"), xaxis = list(title = "Sentiments", categoryorder = "total descending"))
 
