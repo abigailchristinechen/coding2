@@ -15,3 +15,14 @@ library("httr")
 library("tidyverse")
 library("tidytext")
 library('plotly')
+
+#Twitter API keys 
+#Will keep this confidential, but you can generate your own Twitter API keys in the https://developer.twitter.com/en
+consumerKey = 
+consumerSecret = 
+accessToken = 
+accessSecret = 
+
+  
+  
+  
