@@ -67,6 +67,7 @@ Here are some key things to note when you want to scrape from Twitter. One, appl
 
 5. <h3>Twitter API</h3>
 This is what you'll use to connect with the Twitter API.
+
 <img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Twitter%20API%20Config.png" width="500" height="100"/>
 
 And to get the tweets on certain tags, you can just change the topics depending on your topic of interest. Then you just have to repeat these for various tags.
@@ -90,7 +91,7 @@ All the Results can be found [Here](https://github.com/abigailchristinechen/codi
 
 For a a quick demo, this is how I plotted the results using Plotly.
 
-<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/Plotly.png" width="300" height="150"/>
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/Plotly.png" width="300" height="80"/>
 
 For the results of the Single Topic Sentiment Analysis, it can be found here:
 <img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/SA1.png" width="500" height="400"/>
