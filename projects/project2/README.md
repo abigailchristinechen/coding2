@@ -8,7 +8,7 @@
 
 
 
-<img src="https://startup.info/wp-content/uploads/2020/02/techcrunch-logo-1-1000x600.png" width="400" height="180"/>
+<img src="https://github.com/abigailchristinechen/coding2/commit/11a4029087b72997094d33035de7d54978d9fdca" width="800" height="400"/>
 
 1. <h3>Why TechCrunch?</h3>
 TechCrunch started back in 2005, delivering startup news for more than a decade already. It is one of the best reliable online news sources for anything technology and startup related happenings, whether it be fundings, awards, mergers and acquisitions, strategies, hardware and software products from all around the world.  This site is a nice go to site to get started with your tech journey.  They also have their own conferences showcasing the upcoming startups and the great tech leaders of our time. 
