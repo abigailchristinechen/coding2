@@ -46,16 +46,9 @@ This is where we extract further information from the links we generated from th
 This is where we will generate a new dataframe that will store all the new information from the websites we scraped.  Here, we will be getting the links, reading the page, and then extracting the information such as the title, subtitles, and will be piping it.
  <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/GetData%201.png" width="600" height="400"/> 
 
-Here, we will be fixing the extracted text, and combining it into one list -> [Here]()
+Here, we will be fixing the extracted text, and combining it into one list -> [Here's a Sample](https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Scraped%20Articles.csv)
 
  <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/GetData%202.png" width="500" height="200"/>
 
 5. <h3>Results</h3> 
- 
-     
-     
-
-<h6> - Can't forget to check Hungary too 😉. </h6>
-
-6. <h3>Events</h3> 
-I also created an event scheduler to refresh the data, you can tweak it to a specific time frame you want  -> [Here](https://github.com/abigailchristinechen/de1/blob/main/Term1/codes/university_event_scheduler.sql)
+After calling the Getlinks Function, and Getdata Function, we now have our scraped data from TechCrunch. We can write it into a .csv file using the write.csv function.  We can then use these information to conduct further analysis on startup trends and happenings for the various years, and maybe try to see what's up in the next coming years😉 
