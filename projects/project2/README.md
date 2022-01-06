@@ -86,4 +86,20 @@ After that, you need to create a join to combine these two.  Then create a quick
 -6 Pair Sentiment Analysis based on two different tags
 
 7. <h3>Results</h3> 
-All the Results can be found [Here]()😉 
+All the Results can be found [Here](https://github.com/abigailchristinechen/coding2/tree/main/projects/project2/Results)😉 .
+
+For a a quick demo, this is how I plotted the results using Plotly.
+
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/Plotly.png" width="300" height="150"/>
+
+For the results of the Single Topic Sentiment Analysis, it can be found here:
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/SA1.png" width="500" height="400"/>
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/SA2.png" width="500" height="400"/>
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/SA3.png" width="500" height="400"/>
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/SA4.png" width="500" height="400"/>
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/SA5.png" width="500" height="400"/>
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/SA6.png" width="500" height="400"/>
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/SA7.png" width="500" height="400"/>
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/SA8.png" width="500" height="400"/>
+
+
