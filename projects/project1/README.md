@@ -38,94 +38,23 @@ Code Contents:
 This part of the code tries to extract the embedded dates, fix the data forms from character to Date format, creating a temporary data frame which has a link and the date in it, and rbinding it all into one list.  
  <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Error%20Handling.png" width="600" height="400"/> 
    
-3. <h3>GetData Function</h3> 
+4. <h3>GetData Function</h3> 
 This is where we extract further information from the links we generated from the getlink function. The first part will be a loop that will go over the generated data frame awhile ago.  
 
  <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Loop.png" width="1000" height="20"/> 
 
 This is where we will generate a new dataframe that will store all the new information from the websites we scraped.  Here, we will be getting the links, reading the page, and then extracting the information such as the title, subtitles, and will be piping it.
- <img src= " https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/GetData%201.png" width="600" height="400"/> 
+ <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/GetData%201.png" width="600" height="400"/> 
 
+Here, we will be fixing the extracted text, and combining it into one list -> [Here]()
+
+ <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/GetData%202.png" width="500" height="200"/>
+
+5. <h3>Results</h3> 
  
-     2. The *Salaries Dataset* contains 3 tables from which I only used the Salaries per region, because the other tables were about the various departments in the universities. Here are the details for [Table 3](https://github.com/abigailchristinechen/de1/blob/main/Term1/Table%203.png): 
-        
-        <img src= "https://github.com/abigailchristinechen/de1/blob/main/Term1/Table%203.png" width="250" height="140"/>
-       
-    Here's the [EER diagram](https://github.com/abigailchristinechen/de1/blob/main/Term1/EER%20Diagram.png) for the relationship: 
-    
-      <img src= "https://github.com/abigailchristinechen/de1/blob/main/Term1/EER%20Diagram.png" width="700" height="300"/>
-
-3. <h3>Analytics </h3> 
-   - For this project, and for reproducibility here is the -> [Analytics Plan](https://github.com/abigailchristinechen/de1/blob/main/Term1/Analytics%20Plan.png) , quick summary on the steps
-        - Loading the tables
-        - Creating a data warehouse called dw_uni_analysis
-        - Creating data marts to achieve 15 quick views
-     <img src= "https://github.com/abigailchristinechen/de1/blob/main/Term1/Analytics%20Plan.png" width="600" height="300"/>
-
-4. <h3>Analytics Layer</h3> 
-        - Here is the -> [Data Warehouse](https://github.com/abigailchristinechen/de1/blob/main/Term1/data_warehouse_etl_uni.png), consisting of 3 dimensions: Rankings, Scores and Salaries. 
-     <img src= "https://github.com/abigailchristinechen/de1/blob/main/Term1/data_warehouse_etl_uni.png" width="1000" height="200"/>
      
-       
-5. <h3> Data Marts</h3> 
-- The codes for the Data Marts are -> [Here](https://github.com/abigailchristinechen/de1/blob/main/Term1/codes/data_warehouse_etl_uni.sql)
+     
 
-**<h5> Data View 1: Summary of all Universities? </h5>**
-<h6> This data covers the top 1526 universities globally. :) </h6>
-
-
-**<h5> Data View 2: Summary of top 1000 universities </h5>**
-<h6> This data covers the top 1000 universities globally </h6>
-
-**<h5> Data View 3: Summary of top 100 universities </h5>**
-<h6> This data covers the top 100 universities globally </h6>
-
-
-**<h5> Data View 4: what countries has the most ranked universities  </h5>**
-<h6> This data shows US, Japan, UK, China India as the top 5 countries with the most ranked universities, </h6>
-<h6> Hungary has 9 universities ranked, unfortunately CEU is not one of it :( </h6>
-
-
-**<h5> Data View 5: what are the average scores of the countries with ranked universities </h5>**
-<h6> This data view is really useful to see where the various countries scored high in. </h6>
-<h6> For Student Prof ratio : Japan is the lowest out of the top 5 countries(based on the count of uni per country). </h6>
-<h6> For Country Diversity: UK ranks the highest followed by the US. </h6>
-<h6> with UK having almost double the international population of US universities. </h6>
-<h6> Japan, China and India are mostly dominated by local students. </h6>
-
-**<h5> Data View 6: what are the top 10 countries based on count of university and what are their details </h5>**
-<h6> top 10 countries based on the count of universities </h6>   
-    
-**<h5>Data View 7: what are the average rankings per country </h5>**
-<h6>  We can see that Singapore, Netherlands, Hongkong, Switzerland and Belgium have the highest average rank. </h6>
-<h6> Note: that Singapore only had two unis in the ranking. </h6>
-
-**<h5> Data View 8: top universities in the US </h5>**
-<h6> - Here we can see the top US universities with details. </h6>
-<h6> - The salaries data I found was for US universities, and didn't have complete salaries for all the US universities. </h6>
-<h6> - 8/10 top universities are from the US. </h6>
- 
-**<h5> Data View 9: top universities in China </h5>**
-**<h5> Data View 10: top universities in Japan </h5>**
-**<h5> Data View 11: top universities in the UK </h5>**
-
-    
-**<h5> Data View 12: which universities have the highest research scores? </h5>**
-<h6> - We can see that the top 1 uni, which is University of Oxford has 100 for it's research score. </h6>
-<h6> - Followed by Harvard University and University of Cambridge with a reserach score of 99.  </h6>
-
-
-**<h5> Data View 13: which universities have the highest citations scores? </h5>**
-<h6> - We can see here that 21 universities got a perfect score in the citations.  </h6>
-
-
-**<h5>Data View 14: which universities have the highest teaching scores? </h5>**
-<h6> - 7/10 top teaching unis are from the US.  </h6>
-<h6> - 2/10 top teaching unis are from the UK. </h6>
-<h6> - 1/10 Peking University from China is ranked 8th in teaching score, ranking higher than Princeston University. </h6>
-
-
-**<h5>Data View 15: top universities in Hungary </h5>**
 <h6> - Can't forget to check Hungary too 😉. </h6>
 
 6. <h3>Events</h3> 
