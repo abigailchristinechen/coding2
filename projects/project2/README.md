@@ -12,10 +12,17 @@
 1. <h3>Why Axie Infinity? </h3>
 
 Are you into NFT’s?  How about Play-to-earn (P2E) games? 
-
+<img src="https://raw.githubusercontent.com/abigailchristinechen/coding2/main/projects/project2/Axie%20Infinity%20Banner%201.jpg.webp" width="800" height="400"/>
 
 This is one of the first Twitter scraping and data analysis done for a trending play to earn scheme called Axie Infinity?
-TechCrunch started back in 2005, delivering startup news for more than a decade already. It is one of the best reliable online news sources for anything technology and startup related happenings, whether it be fundings, awards, mergers and acquisitions, strategies, hardware and software products from all around the world.  This site is a nice go to site to get started with your tech journey.  They also have their own conferences showcasing the upcoming startups and the great tech leaders of our time. 
+
+Why Axie Infinity?  If you like games and you can spend hours and hours gaming and playing games, then why not play and earn money at the same time?  Are you familiar with grinding in game, where you spend hours and hours levelling up? In Axie, you can do so while earning money as well.  
+
+<img src="https://raw.githubusercontent.com/abigailchristinechen/coding2/main/projects/project2/Axie%20Infinity%20Banner%201.jpg.webp" width="800" height="400"/>
+
+How do you get started? 
+
+There are multiple ways you can play and earn via the game, one is if you buy your own “Axies” which are the in game assets. This means you will be funding your own capital. In order to play, you will be needing 3 axies which can cost from "$1,000-$1,500" for a set of 3, depending on the skills, classes and combinations.  Another way for you to earn is for you to buy some Axies and breed them yourself to make baby Axies, which you can then sell in the marketplace. 
 
 I choose to scrape this site, for 2 reasons: first because I have been following this site for more than 10 years since 2011, and secondly, I haven't found a webscraper for it. So, I think it will be a great idea to build a scraper for it and maybe generate more analysis for it in the future ;) .
 
