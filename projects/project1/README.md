@@ -22,25 +22,28 @@ Code Contents:
 - Results
 
 1. <h3>Libraries Used</h3>
-    1.  Here are the libraries I used: '
-        <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Libraries%20Used.png" width="300" height="180"/>
+    Here are the libraries I used:
+    
+   <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Libraries%20Used.png" width="300" height="180"/>
              
 
 2. <h3>GetLink Function </h3> 
-    1.  To start, we need to go to the TechCrunch webpage, and urlF is introduced because url itself with change after reading one page.  We also have to determine the number of days we want to collect with the Days variable, for this project I decided to collect a week for of articles.  I first ran the code around Early December 2021, and the articles scraped list are in the [ListLinks](https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/listLinks.txt)
+   To start, we need to go to the TechCrunch webpage, and urlF is introduced because url itself with change after reading one page.  We also have to determine the number of days we want to collect with the Days variable, for this project I decided to collect a week for of articles.  I first ran the code around Early December 2021, and the articles scraped list are in the [ListLinks](https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/listLinks.txt)
 
  <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Getlink%20Code%201.png" width="500" height="200"/>
        
  <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Getlink%20Code%202.png" width="500" height="200"/>
   
 3. <h3>Error Catching</h3> 
-
-    
+This part of the code tries to extract the embedded dates, fix the data forms from character to Date format, creating a temporary data frame which has a link and the date in it, and rbinding it all into one list.  
+ <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Error%20Handling.png" width="600" height="400"/> 
    
-     
-      
-        
-        
+3. <h3>GetData Function</h3> 
+This is where we extract further information from the links we generated from the getlink function. 
+
+ <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Error%20Handling.png" width="600" height="400"/> 
+ 
+ 
      2. The *Salaries Dataset* contains 3 tables from which I only used the Salaries per region, because the other tables were about the various departments in the universities. Here are the details for [Table 3](https://github.com/abigailchristinechen/de1/blob/main/Term1/Table%203.png): 
         
         <img src= "https://github.com/abigailchristinechen/de1/blob/main/Term1/Table%203.png" width="250" height="140"/>
