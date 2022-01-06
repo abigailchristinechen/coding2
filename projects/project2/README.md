@@ -93,7 +93,7 @@ For a a quick demo, this is how I plotted the results using Plotly.
 
 <img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/Plotly.png" width="300" height="80"/>
 
-For the results of the Single Topic Sentiment Analysis, it can be found here:
+<h2>For the results of the Single Topic Sentiment Analysis, it can be found here:</h2>
 <img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/SA1.png" width="500" height="400"/>
 <img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/SA2.png" width="500" height="400"/>
 <img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/SA3.png" width="500" height="400"/>
@@ -103,4 +103,10 @@ For the results of the Single Topic Sentiment Analysis, it can be found here:
 <img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/SA7.png" width="500" height="400"/>
 <img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/SA8.png" width="500" height="400"/>
 
-
+<h2>For the results of the Pair Topic Sentiment Analysis, it can be found here:</h2>
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/PSA1.png" width="500" height="400"/>
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/PSA2.png" width="500" height="400"/>
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/PSA3.png" width="500" height="400"/>
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/PSA4.png" width="500" height="400"/>
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/PSA5.png" width="500" height="400"/>
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Results/PSA6.png" width="500" height="400"/>
