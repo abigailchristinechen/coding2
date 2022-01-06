@@ -23,6 +23,8 @@ Why Axie Infinity?  If you like games and you can spend hours and hours gaming a
 How do you get started? 
 
 There are multiple ways you can play and earn via the game, one is if you buy your own “Axies” which are the in game assets. This means you will be funding your own capital. In order to play, you will be needing 3 axies which can cost from "$1,000-$1,500" for a set of 3, depending on the skills, classes and combinations.  Another way for you to earn is for you to buy some Axies and breed them yourself to make baby Axies, which you can then sell in the marketplace. 
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Axie%20Gameplay.jpg" width="800" height="400"/>
+
 
 I choose to scrape this site, for 2 reasons: first because I have been following this site for more than 10 years since 2011, and secondly, I haven't found a webscraper for it. So, I think it will be a great idea to build a scraper for it and maybe generate more analysis for it in the future ;) .
 
