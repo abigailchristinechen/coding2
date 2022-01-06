@@ -6,7 +6,7 @@
 
 >This repository contains the detailed description and guide for my Project 2: submission for Coding 2. I used [Twitter](https://www.twitter.com) as the primary source of the tweets.  I got the Access Codes via the [Twitter Developer Account](https://developer.twitter.com/).  
 
-<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Photos/Twitter%20Developer%20Screenshot.png" width="800" height="400"/>
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Code%20Snaps/Twitter%20Developer%20Screenshot.png" width="800" height="400"/>
 
 
 1. <h3>Why Axie Infinity? </h3>
