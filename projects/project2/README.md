@@ -6,11 +6,15 @@
 
 >This repository contains the detailed description and guide for my Project 2: submission for Coding 2. I used [Twitter](https://www.twitter.com) as the primary source of the tweets.  I got the Access Codes via the [Twitter Developer Account](https://developer.twitter.com/).  
 
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Twitter%20Developer%20Screenshot.png" width="800" height="400"/>
 
 
-<img src="https://github.com/abigailchristinechen/coding2/commit/11a4029087b72997094d33035de7d54978d9fdca" width="800" height="400"/>
+1. <h3>Why Axie Infinity? </h3>
 
-1. <h3>Why TechCrunch?</h3>
+Are you into NFT’s?  How about Play-to-earn (P2E) games? 
+
+
+This is one of the first Twitter scraping and data analysis done for a trending play to earn scheme called Axie Infinity?
 TechCrunch started back in 2005, delivering startup news for more than a decade already. It is one of the best reliable online news sources for anything technology and startup related happenings, whether it be fundings, awards, mergers and acquisitions, strategies, hardware and software products from all around the world.  This site is a nice go to site to get started with your tech journey.  They also have their own conferences showcasing the upcoming startups and the great tech leaders of our time. 
 
 I choose to scrape this site, for 2 reasons: first because I have been following this site for more than 10 years since 2011, and secondly, I haven't found a webscraper for it. So, I think it will be a great idea to build a scraper for it and maybe generate more analysis for it in the future ;) .
