@@ -5,12 +5,14 @@
 
 >This repository contains the detailed description of my Project 1: submission for Coding 2. I used the website, [TechCrunch](https://www.techcrunch.com). 
 
+<img src="https://startup.info/wp-content/uploads/2020/02/techcrunch-logo-1-1000x600.png" width="500" height="250"/>
+
 1. <h3>Why TechCrunch?</h3>
 TechCrunch started back in 2005, delivering startup news for more than a decade already. It is one of the best reliable online news sources for anything technology and startup related happenings, whether it be fundings, awards, mergers and acquisitions, strategies, hardware and software products from all around the world.  This site is a nice go to site to get started with your tech journey.  They also have their own conferences showcasing the upcoming startups and the great tech leaders of our time. 
 
 I choose to scrape this site, for 2 reasons: first because I have been following this site for more than 10 years since 2011, and secondly, I haven't found a webscraper for it. So, I think it will be a great idea to build a scraper for it and maybe generate more analysis for it in the future ;) .
 
-You'll find more details below. Enjoy :)
+You'll find more details below. Enjoy :) All codes can be found in Project 1 repository -> [Here](https://github.com/abigailchristinechen/coding2/blob/main/projects/project1)
 
 Code Contents:
 - Libraries
@@ -21,27 +23,10 @@ Code Contents:
 
 1. <h3>Libraries Used</h3>
     1.  Here are the libraries I used: '
-           <img src= "https://github.com/abigailchristinechen/de1/blob/main/Term1/Table%201.png" width="250" height="120"/>
-        [University Ranking Data](https://www.kaggle.com/mylesoneill/world-university-rankings) 
-        - The first dataset is about the different universities in the world. 
-        - Here's we'll see the various aspects of university rankings eg. citations, culture diversity, gender balance.
-        - With these parameters, we can see which universities are comparable to each other. 
-        - If you're also planning to study abroad, this will give you a glimpse of which country & top diverse uni to go to. 
-        - How does your uni compare globally?
-        <img src="https://media.giphy.com/media/qLHzYjlA2FW8g/giphy.gif"/>
-         
-  
-    2.  Where It Pays to Attend College from Kaggle 
-        [Salaries Data](https://www.kaggle.com/wsj/college-salaries) 
-        - Salaries Region data, this dataset contains data for the different universities and colleges in the US.
-        - Here, you'll see the entry level, mid level and percentiles of salaries from various universities.
-        - You can compare these salaries to the tuition and expenses you are expected to incur and see your estimated payback.
-        - You can also do queries on which state to go to for more options
-        
-    3.  Both datasets are in a zip folder in this repository -> [Here](https://github.com/abigailchristinechen/de1/tree/main/Term1/data)
-        
+        <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Libraries%20Used.png" width="200" height="120"/>
+             
 
-2. <h3>Operational Layer </h3> 
+2. <h3>GetLink Function </h3> 
     
     1.  The *University Ranking* contains [Table 1](https://github.com/abigailchristinechen/de1/blob/main/Term1/Table%201.png) , [Table 2](https://github.com/abigailchristinechen/de1/blob/main/Term1/Table%202.png) which contain the following details
 
