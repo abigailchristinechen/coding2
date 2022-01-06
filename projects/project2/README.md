@@ -11,37 +11,63 @@
 
 1. <h3>Why Axie Infinity? </h3>
 
-Are you into NFT’s?  How about Play-to-earn (P2E) games? 
+Have you ever seen these cute creatures? Are you into NFT’s?  How about Play-to-earn (P2E) games? 
 <img src="https://raw.githubusercontent.com/abigailchristinechen/coding2/main/projects/project2/Axie%20Infinity%20Banner%201.jpg.webp" width="800" height="400"/>
 
 This is one of the first Twitter scraping and data analysis done for a trending play to earn scheme called Axie Infinity?
 
 Why Axie Infinity?  If you like games and you can spend hours and hours gaming and playing games, then why not play and earn money at the same time?  Are you familiar with grinding in game, where you spend hours and hours levelling up? In Axie, you can do so while earning money as well.  
 
-<img src="https://raw.githubusercontent.com/abigailchristinechen/coding2/main/projects/project2/Axie%20Infinity%20Banner%201.jpg.webp" width="800" height="400"/>
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Axie%20Gameplay.jpg" width="800" height="400"/>
 
 How do you get started? 
 
+<img src="https://raw.githubusercontent.com/abigailchristinechen/coding2/main/projects/project2/Axie%20Scholarship.jpg.webp" width="800" height="400"/>
+
 There are multiple ways you can play and earn via the game, one is if you buy your own “Axies” which are the in game assets. This means you will be funding your own capital. In order to play, you will be needing 3 axies which can cost from "$1,000-$1,500" for a set of 3, depending on the skills, classes and combinations.  Another way for you to earn is for you to buy some Axies and breed them yourself to make baby Axies, which you can then sell in the marketplace. 
-<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Axie%20Gameplay.jpg" width="800" height="400"/>
 
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Scholarships.jpg" width="800" height="400"/>
 
-I choose to scrape this site, for 2 reasons: first because I have been following this site for more than 10 years since 2011, and secondly, I haven't found a webscraper for it. So, I think it will be a great idea to build a scraper for it and maybe generate more analysis for it in the future ;) .
+If you have no capital, you can apply to a "scholarship" and be a "scholar", the capital owner will be your "manager".
+As a scholar, you'll trade of your time and skills to play the game, while the manager will be providing you with the capital to play.  Then the "scholar" and the "manager", will split the earnings depending on their agreement.  With this quick analaysis, I will be looking at some sentiments for certain tags related to the game Axie Infinity.
 
-You'll find more details below. Enjoy :) All codes can be found in Project 1 repository -> [Here](https://github.com/abigailchristinechen/coding2/blob/main/projects/project1)
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Axie%20Manager%20Services.jpg" width="800" height="400"/>
 
-Code Contents:
+You'll find more details below. Enjoy :) All codes can be found in Project 2 repository -> [Here](https://github.com/abigailchristinechen/coding2/blob/main/projects/project2)
+
+Contents:
+- Key Tags
 - Libraries
-- GetLink Function
-- Error Catching 
-- GetData Function
-- Results
+- Scope & Limitations
+- Challenges
+- Twitter API
+- Sentiment Analysis
+- Pair Sentiment Analysis
 
-1. <h3>Libraries Used</h3>
-    Here are the libraries I used:
-    
-   <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Libraries%20Used.png" width="300" height="180"/>
-             
+
+1. <h3>Keywords to be Scraped</h3>
+- Axie
+- axie infinity
+- AXS
+- SLP
+- SkyMavis
+- Scholarship
+- Manager 
+- Scholar
+
+2. <h3>Libraries</h3>
+- library("prettydoc")
+- library("base64enc")
+- library("openssl")
+    4.    library("httpuv")
+    5.    library("twitteR")
+    6.    library("tm")
+    7.    library("stringr")
+    8.    library("dplyr")
+    9.    library("httr")
+    10.   library("tidyverse")
+    11.   library("tidytext")
+    12.   library('plotly')
 
 2. <h3>GetLink Function </h3> 
    To start, we need to go to the TechCrunch webpage, and urlF is introduced because url itself with change after reading one page.  We also have to determine the number of days we want to collect with the Days variable, for this project I decided to collect a week for of articles.  I first ran the code around Early December 2021, and the articles scraped list are in the [ListLinks](https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/listLinks.txt)
