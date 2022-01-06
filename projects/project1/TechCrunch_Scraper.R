@@ -93,3 +93,58 @@ getlinks = function(Days){
   ## returns the dataframe
   return(df) 
 }
+
+
+getText = function( dfTemp ){
+  data = data.frame() 
+  ## creating a datframe which will store all the information
+  for (link in 1:nrow(dfTemp)) { ## looping over all the rows of datafarem generated earlier
+    
+    # getting link from the input dataframe 
+    u = dfTemp$Link[link] 
+    
+    # reading the htm page
+    scraping <- read_html(u) 
+    
+    ## these steps extract the title of the article
+    title = scraping %>%
+      html_nodes("h1")%>%
+      html_text()
+    title = title[1] 
+    
+    ## these steps extract the sub titles of the article
+    subTitles = scraping %>%
+      html_nodes("h2")%>%
+      html_text()
+    subTitles = paste(subTitles, collapse='|' ) 
+    
+    
+    text = scraping %>%
+      html_nodes("p")%>%
+      html_text()
+    
+    ## this step is added to get rid of any garbage appearing the extracted text
+    text = Filter(function(x) !any(grepl("function()", x)), text) 
+    
+    ## these steps extract the text of the article
+    text  = paste(text, collapse= " " ) 
+    
+    # creating a temporary dataframe
+    dataTemp = data.frame(Date = c(dfTemp$Date[link]), 
+                          Link = c(dfTemp$Link[link] ),
+                          Title = c(title),
+                          SubTitles = c(subTitles),
+                          Text = c(text))
+    
+    
+    # binding temporary data frame to the main data frame we defined at the start of this function
+    data = rbind(data, dataTemp) 
+    
+  }
+  return(data) # return the data frame
+}
+
+
+
+
+
