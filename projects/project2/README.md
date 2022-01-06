@@ -65,7 +65,25 @@ Due to the limited number of tweets allowed to be scraped by my developer accoun
 4.  <h3>Challenges</h3>
 Here are some key things to note when you want to scrape from Twitter. One, applying for the twitter developer API takes time, and takes longer during the holidays.  There are also different account tiers that can help you scrape more information with lesser restrictions.  I still have my application for the education tier for million tweet scrapes pending. Aside from this, getting the Twitter API to work is challenging and can be very tricky, you need to set the correct settings to get it to work. :) 
 
-5. Twitter API
+5. <h3>Twitter API</h3>
+This is what you'll use to connect with the Twitter API.
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Twitter%20API%20Config.png" width="500" height="100"/>
 
-5. <h3>Results</h3> 
+And to get the tweets on certain tags, you can just change the topics depending on your topic of interest. Then you just have to repeat these for various tags.
+
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Twitter%20Scrape.png" width="500" height="250"/>
+
+6. <h3>Sentiment Analysis </h3>
+For the sentiment analysis, you first need to separate the tweets, and breakdown down into words.  Generate a list of this words and compare it with your chosen lexicon. Then, you need to get the "interesting tweets", and load the sentiment analyzer.
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Twitter.png" width="500" height="250"/>
+
+After that, you need to create a join to combine these two.  Then create a quick summary of the general sentiments based on the tweet tags. Then create a quick visual of the summaries
+
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Sentiment.png" width="500" height="250"/>
+
+<h3>List of Sentiment Analysis Done</h3>
+-8 Sentiment Analysis on each Twitter topic / tag on Axie Infinity
+-6 Pair Sentiment Analysis based on two different tags
+
+7. <h3>Results</h3> 
 After calling the Getlinks Function, and Getdata Function, we now have our scraped data from TechCrunch. We can write it into a .csv file using the write.csv function.  We can then use these information to conduct further analysis on startup trends and happenings for the various years, and maybe try to see what's up in the next coming years😉 
