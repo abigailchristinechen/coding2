@@ -42,7 +42,10 @@ This part of the code tries to extract the embedded dates, fix the data forms fr
 This is where we extract further information from the links we generated from the getlink function. The first part will be a loop that will go over the generated data frame awhile ago.  
 
  <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Loop.png" width="1000" height="20"/> 
- 
+
+This is where we will generate a new dataframe that will store all the new information from the websites we scraped.  Here, we will be getting the links, reading the page, and then extracting the information such as the title, subtitles, and will be piping it.
+ <img src= " https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/GetData%201.png" width="600" height="400"/> 
+
  
      2. The *Salaries Dataset* contains 3 tables from which I only used the Salaries per region, because the other tables were about the various departments in the universities. Here are the details for [Table 3](https://github.com/abigailchristinechen/de1/blob/main/Term1/Table%203.png): 
         
