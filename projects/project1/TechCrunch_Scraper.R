@@ -65,7 +65,8 @@ getlinks = function(Days){
           ## updating the current date to the one extracted from the link
           CurrentDate = date 
           
-          if(CurrentDate > FilterDate){ ## if current date is graeter than the filter date, we add the link and date to the datafarem defined above
+          ## if current date is greater than the filter date, we add the link and date to the datafarem defined above
+          if(CurrentDate > FilterDate){ 
             link = WebList[i] 
             # creating temporary data frame, which has link and date in it.
             Tempdf = data.frame(Date = c(date),
@@ -97,8 +98,8 @@ getlinks = function(Days){
 
 getText = function( dfTemp ){
   data = data.frame() 
-  ## creating a datframe which will store all the information
-  for (link in 1:nrow(dfTemp)) { ## looping over all the rows of datafarem generated earlier
+  ## creating a dataframe which will store all the information
+  for (link in 1:nrow(dfTemp)) { ## looping over all the rows of dataframe generated earlier
     
     # getting link from the input dataframe 
     u = dfTemp$Link[link] 
