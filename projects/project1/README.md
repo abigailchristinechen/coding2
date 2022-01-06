@@ -5,7 +5,7 @@
 
 >This repository contains the detailed description of my Project 1: submission for Coding 2. I used the website, [TechCrunch](https://www.techcrunch.com). 
 
-<img src="https://startup.info/wp-content/uploads/2020/02/techcrunch-logo-1-1000x600.png" width="500" height="250"/>
+<img src="https://startup.info/wp-content/uploads/2020/02/techcrunch-logo-1-1000x600.png" width="400" height="180"/>
 
 1. <h3>Why TechCrunch?</h3>
 TechCrunch started back in 2005, delivering startup news for more than a decade already. It is one of the best reliable online news sources for anything technology and startup related happenings, whether it be fundings, awards, mergers and acquisitions, strategies, hardware and software products from all around the world.  This site is a nice go to site to get started with your tech journey.  They also have their own conferences showcasing the upcoming startups and the great tech leaders of our time. 
@@ -23,16 +23,16 @@ Code Contents:
 
 1. <h3>Libraries Used</h3>
     1.  Here are the libraries I used: '
-        <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Libraries%20Used.png" width="200" height="120"/>
+        <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Libraries%20Used.png" width="300" height="180"/>
              
 
 2. <h3>GetLink Function </h3> 
     
-    1.  The *University Ranking* contains [Table 1](https://github.com/abigailchristinechen/de1/blob/main/Term1/Table%201.png) , [Table 2](https://github.com/abigailchristinechen/de1/blob/main/Term1/Table%202.png) which contain the following details
-
-      <img src= "https://github.com/abigailchristinechen/de1/blob/main/Term1/Table%201.png" width="250" height="120"/>
+    1.  Here is the Get Link function 
+      <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Getlink%20Code%201.png" width="250" height="120"/>
        
-      <img src= "https://github.com/abigailchristinechen/de1/blob/main/Term1/Table%202.png" width="250" height="140"/>
+       <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Getlink%20Code%201.png" width="250" height="120"/>
+      
         
         
      2. The *Salaries Dataset* contains 3 tables from which I only used the Salaries per region, because the other tables were about the various departments in the universities. Here are the details for [Table 3](https://github.com/abigailchristinechen/de1/blob/main/Term1/Table%203.png): 
