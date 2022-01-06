@@ -39,9 +39,9 @@ This part of the code tries to extract the embedded dates, fix the data forms fr
  <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Error%20Handling.png" width="600" height="400"/> 
    
 3. <h3>GetData Function</h3> 
-This is where we extract further information from the links we generated from the getlink function. 
+This is where we extract further information from the links we generated from the getlink function. The first part will be a loop that will go over the generated data frame awhile ago.  
 
- <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Error%20Handling.png" width="600" height="400"/> 
+ <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Loop.png" width="1000" height="20"/> 
  
  
      2. The *Salaries Dataset* contains 3 tables from which I only used the Salaries per region, because the other tables were about the various departments in the universities. Here are the details for [Table 3](https://github.com/abigailchristinechen/de1/blob/main/Term1/Table%203.png): 
