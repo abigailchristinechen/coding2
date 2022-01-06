@@ -86,4 +86,4 @@ After that, you need to create a join to combine these two.  Then create a quick
 -6 Pair Sentiment Analysis based on two different tags
 
 7. <h3>Results</h3> 
-After calling the Getlinks Function, and Getdata Function, we now have our scraped data from TechCrunch. We can write it into a .csv file using the write.csv function.  We can then use these information to conduct further analysis on startup trends and happenings for the various years, and maybe try to see what's up in the next coming years😉 
+All the Results can be found [Here]()😉 
