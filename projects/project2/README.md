@@ -56,41 +56,16 @@ Contents:
 - Scholar
 
 2. <h3>Libraries</h3>
-- library("prettydoc")
-- library("base64enc")
-- library("openssl")
-    4.    library("httpuv")
-    5.    library("twitteR")
-    6.    library("tm")
-    7.    library("stringr")
-    8.    library("dplyr")
-    9.    library("httr")
-    10.   library("tidyverse")
-    11.   library("tidytext")
-    12.   library('plotly')
+Here are the libraries I used.  The library used for the sentiment analysis is the textdata, I read that this isn’t going to provide you the same accuracy as using the language model, but it’s going to get you to the fastest solution (with some accuracy tradeoff).
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project2/Lib.png" width="150" height="150"/>
 
-2. <h3>GetLink Function </h3> 
-   To start, we need to go to the TechCrunch webpage, and urlF is introduced because url itself with change after reading one page.  We also have to determine the number of days we want to collect with the Days variable, for this project I decided to collect a week for of articles.  I first ran the code around Early December 2021, and the articles scraped list are in the [ListLinks](https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/listLinks.txt)
+3.  <h3>Scope & Limitations</h3>
+Due to the limited number of tweets allowed to be scraped by my developer account, I will be limiting the scraping to 10,000 tweets per "Tag".  For further continuation of the analysis, and further expansion of the trends with Axie Infinity, more tweets can definitely  beanalyzed. Also, it will also be great to include a lexicon that's more in-line with the crypto slang, and this will probably give better sentiment analysis. 
 
- <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Getlink%20Code%201.png" width="500" height="200"/>
-       
- <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Getlink%20Code%202.png" width="500" height="200"/>
-  
-3. <h3>Error Catching</h3> 
-This part of the code tries to extract the embedded dates, fix the data forms from character to Date format, creating a temporary data frame which has a link and the date in it, and rbinding it all into one list.  
- <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Error%20Handling.png" width="600" height="400"/> 
-   
-4. <h3>GetData Function</h3> 
-This is where we extract further information from the links we generated from the getlink function. The first part will be a loop that will go over the generated data frame awhile ago.  
+4.  <h3>Challenges</h3>
+Here are some key things to note when you want to scrape from Twitter. One, applying for the twitter developer API takes time, and takes longer during the holidays.  There are also different account tiers that can help you scrape more information with lesser restrictions.  I still have my application for the education tier for million tweet scrapes pending. Aside from this, getting the Twitter API to work is challenging and can be very tricky, you need to set the correct settings to get it to work. :) 
 
- <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Loop.png" width="1000" height="20"/> 
-
-This is where we will generate a new dataframe that will store all the new information from the websites we scraped.  Here, we will be getting the links, reading the page, and then extracting the information such as the title, subtitles, and will be piping it.
- <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/GetData%201.png" width="600" height="400"/> 
-
-Here, we will be fixing the extracted text, and combining it into one list -> [Here's a Sample](https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/Scraped%20Articles.csv)
-
- <img src= "https://github.com/abigailchristinechen/coding2/blob/main/projects/project1/GetData%202.png" width="500" height="200"/>
+5. Twitter API
 
 5. <h3>Results</h3> 
 After calling the Getlinks Function, and Getdata Function, we now have our scraped data from TechCrunch. We can write it into a .csv file using the write.csv function.  We can then use these information to conduct further analysis on startup trends and happenings for the various years, and maybe try to see what's up in the next coming years😉 
