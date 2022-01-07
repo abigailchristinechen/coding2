@@ -116,5 +116,25 @@ This is the generated list for ALL the Nominees:
 <img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/List%20of%20Sites/AW_List3.png" width="400" height="200"/>
 
 ## Scraping the Information
-All the codes, I used can be found [Here](https://github.com/abigailchristinechen/coding2/tree/main/projects/project3/List%20of%20Sites):
+All the codes, I used can be found [Here](https://github.com/abigailchristinechen/coding2/tree/main/projects/project3/Codes):
+
+Here is a code snap for getting the Yearly Winners information, it will be similar for the Monthly, and Daily winners as well.
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Code%20Snaps/AW_Year_Scrape.png" width="500" height="350"/>
+
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Code%20Snaps/AW_Year_Scrape2.png" width="500" height="350"/>
+
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Code%20Snaps/AW_Year_Scrape3.png" width="500" height="350"/>
+
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Code%20Snaps/AW_Year_Scrape4.png" width="500" height="350"/>
+
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Code%20Snaps/AW_Year_Scrape5.png" width="500" height="350"/>
+
+
+
+
+
+
+
+
+
 
