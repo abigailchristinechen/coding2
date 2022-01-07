@@ -14,6 +14,7 @@ Content:
 - Scraping Methodology
 - Libraries
 - Getting the Links
+- Links Sample
 - Scraping the Information
 - Results 
 
@@ -79,21 +80,37 @@ Here are the libraries used:
 To get the website links, we will need to run 4 versions of the code.
 
 This is for getting the list for ALL the daily winners:
+
 <img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Code%20Snaps/AW_Day_List.png" width="500" height="250"/>
 
 This is for getting the list for ALL  the monthly winners:
+
 <img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Code%20Snaps/AW_Month_List.png" width="500" height="250"/>
 
 This is for getting the list for ALL the yearly winners:
+
 <img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Code%20Snaps/AW_Year_List.png" width="500" height="250"/>
 
 This is for getting the list for ALL the nominees:
+
 <img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Code%20Snaps/AW_Nom_List.png" width="500" height="250"/>
 
-The generated lists can then be found [Here]()
+The generated lists can then be found [Here](https://github.com/abigailchristinechen/coding2/tree/main/projects/project3/List%20of%20Sites):
 
+## Links Sample:
 
+This is the generated list for ALL the daily winners:
 
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/List%20of%20Sites/AW_List1.png" width="400" height="200"/>
 
+This is the generated list for ALL the monthly winners:
 
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/List%20of%20Sites/AW_List2.png" width="400" height="200"/>
 
+This is the generated list for ALL the yearly winners:
+
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/List%20of%20Sites/AW_List3.png" width="400" height="200"/>
+
+This is the generated list for ALL the Nominees:
+
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/List%20of%20Sites/AW_List4.png" width="400" height="200"/>
