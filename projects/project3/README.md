@@ -95,9 +95,9 @@ This is for getting the list for ALL the nominees:
 
 <img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Code%20Snaps/AW_Nom_List.png" width="500" height="250"/>
 
-The generated lists can then be found [Here](https://github.com/abigailchristinechen/coding2/tree/main/projects/project3/List%20of%20Sites):
-
 ## Links Sample:
+
+The generated lists can then be found [Here](https://github.com/abigailchristinechen/coding2/tree/main/projects/project3/List%20of%20Sites):
 
 This is the generated list for ALL the daily winners:
 
@@ -109,8 +109,12 @@ This is the generated list for ALL the monthly winners:
 
 This is the generated list for ALL the yearly winners:
 
-<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/List%20of%20Sites/AW_List3.png" width="400" height="200"/>
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/List%20of%20Sites/AW_List4.png" width="400" height="200"/>
 
 This is the generated list for ALL the Nominees:
 
-<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/List%20of%20Sites/AW_List4.png" width="400" height="200"/>
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/List%20of%20Sites/AW_List3.png" width="400" height="200"/>
+
+## Scraping the Information
+All the codes, I used can be found [Here](https://github.com/abigailchristinechen/coding2/tree/main/projects/project3/List%20of%20Sites):
+
