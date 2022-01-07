@@ -129,10 +129,43 @@ Here is a code snap for getting the Yearly Winners information, it will be simil
 
 <img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Code%20Snaps/AW_Year_Scrape5.png" width="500" height="350"/>
 
+## Results
+For the results, I decided to use Plotly and generate histograms. 
 
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Code%20Snaps/AW_Res_Viz.png" width="500" height="80"/>
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Code%20Snaps/AW_Res_Viz2.png" width="500" height="80"/>
 
+Here is a quick summary of everything I scraped. 
+For Winners: Title, Description, Country, Author, Rating, Categories, Colors, Technologies, Industry, Tags, Rating For Nominees: Title, Description, Country, Author, Rating, Technologies, Industry, Tags
 
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Results/AW_Res_Tot.png" width="500" height="150"/> 
 
+And here are the sample visuals of it. Enjoy. :) 
+
+The spread of yearly winners rating is the least of all three and its mean lies around 8.0.
+
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Results/AW_Res1.png" width="500" height="150"/>
+
+The mean and spread of the monthly winners spread has moved towards higher ratings compared to the daily winners.
+
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Results/AW_Res2.png" width="500" height="150"/>
+
+The rating spread shows normal distribution with mean lying somewhere at 7.3.
+
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Results/AW_Res3.png" width="500" height="150"/>
+
+Yearly winners are France and Netherlands and are followed by the US and Denmark respectively.
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Results/AW_Res4.png" width="500" height="150"/>
+
+Monthly winner is the US followed by France; however, Netherlands have displaced the UK at the third spot.
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Results/AW_Res7.png" width="500" height="150"/>
+
+The United States has the most “Daily Winners” articles. France comes at second while UK stands at third position.
+
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Results/AW_Res6.png" width="500" height="150"/>
+
+For the Nominees, the United States has the most nominations with 2400 followed by the United Kingdom at 1087.
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Results/AW_Res5.png" width="500" height="150"/>
 
 
 
