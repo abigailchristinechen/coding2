@@ -12,6 +12,7 @@ Content:
 - Scope & Limitations
 - Challenges
 - Scraping Methodology
+- Libraries
 - Getting the Links
 - Scraping the Information
 - Results 
@@ -67,8 +68,31 @@ One of my initial goals was to also scrape the various subratings ("Design", "Us
 2. (Scrape the Data) The ".txt" files were read to get the list of web links saved earlier.  These links were used to scrape "Title", "Description", "Country", "Author","Rating", "Categories" and "Colors" for "Daily", "Monthly" and "Yearly" winners. The scrapped data was saved as "csv" files.
 3. (Note:) For "Nominees" the "Rating" was not available, colors and authors couldn't be scrapped and rest was done as mentioned above. 
 
+## Libraries
 
- 
+Here are the libraries used:
+
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Code%20Snaps/Lib.png" width="200" height="150"/>
+
+## Getting the Links
+
+To get the website links, we will need to run 4 versions of the code.
+
+This is for getting the list for ALL the daily winners:
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Code%20Snaps/AW_Day_List.png" width="500" height="250"/>
+
+This is for getting the list for ALL  the monthly winners:
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Code%20Snaps/AW_Month_List.png" width="500" height="250"/>
+
+This is for getting the list for ALL the yearly winners:
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Code%20Snaps/AW_Year_List.png" width="500" height="250"/>
+
+This is for getting the list for ALL the nominees:
+<img src="https://github.com/abigailchristinechen/coding2/blob/main/projects/project3/Code%20Snaps/AW_Nom_List.png" width="500" height="250"/>
+
+The generated lists can then be found [Here]()
+
+
 
 
 
